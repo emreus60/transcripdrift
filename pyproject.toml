@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emreus60-transcripdrift"
+version = "0.1.0"
+description = "比对不同参数或模型的转写结果，标出关键差异点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "emreus60" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://emreus60.github.io"
+Repository = "https://github.com/emreus60/transcripdrift"
+Issues = "https://github.com/emreus60/transcripdrift/issues"
+
+[project.scripts]
+transcripdrift = "transcripdrift:main"
+
+[tool.setuptools]
+py-modules = ["transcripdrift"]
